@@ -57,4 +57,4 @@ A quick-starter to build the skeleton of a hexagonal architecture application, b
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
 [contributors-url]: https://github.com/JorgeRojasDev/hexagonal-reactive-archetype/graphs/contributors
 [license-url]:https://github.com/JorgeRojasDev/hexagonal-reactive-archetype/blob/main/LICENSE
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge# Hexagonal Reactive Archetype
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
