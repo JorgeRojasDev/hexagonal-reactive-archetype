@@ -1,0 +1,27 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor name="multi-module">
+
+    <requiredProperties>
+        <requiredProperty key="packageName">
+        </requiredProperty>
+    </requiredProperties>
+    <fileSets>
+        <fileSet filtered="true" packaged="true">
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+            <excludes>
+                <exclude>**/*.iml</exclude>
+                <exclude>**.idea</exclude>
+                <exclude>**.mvn</exclude>
+            </excludes>
+        </fileSet>
+        <fileSet filtered="true">
+            <include>*.xml,*.yml,*.mustache</include>
+        </fileSet>
+    </fileSets>
+
+</archetype-descriptor>

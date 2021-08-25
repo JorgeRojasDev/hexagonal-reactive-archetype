@@ -1,0 +1,51 @@
+openapi: 3.0.2
+info:
+  title: ProjectF
+  description: "ProjectF testing"
+  contact:
+    name: Jorge Rojas
+    email: j.rojaszafra.p@gmail.com
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 0.0.1-SNAPSHOT
+tags:
+  - name: example
+paths:
+  /example-mono:
+    get:
+      tags:
+        - example
+      summary: exampleMono
+      operationId: getExampleMono
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ExampleModelDto'
+  /example-flux:
+    get:
+      tags:
+        - example
+      summary: exampleFlux
+      operationId: getExampleFlux
+      responses:
+        '200':
+          description: Success
+          content:
+            text/event-stream:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ExampleModelDto'
+components:
+  schemas:
+    ExampleModelDto:
+      type: object
+      properties:
+        exampleId:
+          type: integer
+        exampleName:
+          type: string

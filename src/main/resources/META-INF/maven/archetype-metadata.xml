@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor xsi:schemaLocation="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0 http://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd" name="hexagonal-archetype-reactive"
+    xmlns="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <fileSets>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>src/main/resources</directory>
+      <includes>
+        <include>**/*.xml</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory>src/main/resources</directory>
+      <includes>
+        <include>**/*.properties_old</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" packaged="true" encoding="UTF-8">
+      <directory>src/test/java</directory>
+      <includes>
+        <include>**/*.java</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>.idea/libraries</directory>
+      <includes>
+        <include>**/*.xml</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>.mvn/wrapper</directory>
+      <includes>
+        <include>**/*.java</include>
+        <include>**/*.properties</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>.idea</directory>
+      <includes>
+        <include>**/*.xml</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory>.mvn/wrapper</directory>
+      <includes>
+        <include>**/*.jar</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory>.idea/sonarlint</directory>
+      <includes>
+        <include>**/*.</include>
+        <include>**/*.pb</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory>.idea</directory>
+      <includes>
+        <include>**/*.gitignore</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory></directory>
+      <includes>
+        <include>.gitignore</include>
+        <include>docker-compose</include>
+        <include>HELP.md</include>
+        <include>mvnw</include>
+        <include>mvnw.cmd</include>
+        <include>projectf.iml</include>
+        <include>README.md</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+  <modules>
+    <module id="boot" dir="boot" name="boot">
+      <fileSets>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>src/main/resources</directory>
+          <includes>
+            <include>**/*.yml</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>boot.iml</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="infraestructure" dir="infraestructure" name="infraestructure">
+      <fileSets>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>infraestructure.iml</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="api" dir="api" name="api">
+      <fileSets>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>src/main/resources</directory>
+          <includes>
+            <include>**/*.yml</include>
+            <include>**/*.mustache</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>api.iml</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="domain" dir="domain" name="domain">
+      <fileSets>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>domain.iml</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="usecase" dir="usecase" name="usecase">
+      <fileSets>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>usecase.iml</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+  </modules>
+</archetype-descriptor>
