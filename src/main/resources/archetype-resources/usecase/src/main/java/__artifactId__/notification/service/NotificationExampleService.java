@@ -4,7 +4,7 @@
 package ${package}.${artifactId}.notification.service;
 
 import ${package}.domain.example.model.ExampleModel;
-import ${groupId}.libraries.flux.notifier.service.abstraction.Notifier;
+import io.github.jorgerojasdev.libraries.flux.notifier.service.abstraction.Notifier;
 
 public interface NotificationExampleService extends Notifier<ExampleModel> {
 
